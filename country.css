@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.header-container {
+  box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+main {
+  padding: 24px;
+}
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  margin-inline: auto;
+  padding: 1rem;
+  max-width: 1000px;
+  /* padding-inline: 24px; */
+  align-items: center;
+  /* background-color: pink; */
+}
+.backbutton {
+  padding: 6px 24px;
+  box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.2);
+  /* padding-inline: 20px;
+    padding-top: 3px;
+     */
+  border-radius: 4px;
+  padding: 8px;
+  justify-content: space-between;
+}
+a {
+  text-decoration-line: none;
+}
+.country-details {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 64px;
+}
+.country-details img {
+  width: 55%;
+}
+.details {
+  font-size: small;
+  width: 40%;
+}
+.detail_text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: medium;
+  max-height: 150px;
+  flex-wrap: wrap;
+}
+.border_country{
+  margin-top: 50px;
+  box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.2);
+    flex-wrap: wrap;
+  display: flex;
+  gap: 1rem;
+  padding:1rem;
+}
+.border_country a{
+  border: 1px solid black;
+  padding: 0.5px;
+}
+
+@media (max-width: 940px) {
+  .country-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .detail_text {
+    display: block;
+  }
+  .country-details img {
+    width: 100%;
+    max-width: 400px;
+  }
+  .header-content p {
+    font-size: 12px;
+  }
+}
+
+
+
+
+
+/* Default Light Mode */
+body {
+  background-color: white;
+  color: black;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+/* Header Dark Mode */
+.dark-mode .header-container {
+  background-color: #333;
+}
+
+/* Search & Filter Dark Mode */
+.dark-mode .search_filter-container {
+  background-color: #2b2b2b;
+}
+
+/* Country Card Dark Mode */
+.dark-mode .country_card {
+  background-color: #333;
+  color: white;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+/* Dark Mode Button */
+.darkModeToggle {
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px;
+  transition: all 0.3s;
+}
+
+/* Hover Effect */
+.darkModeToggle:hover {
+  opacity: 0.8;
+}

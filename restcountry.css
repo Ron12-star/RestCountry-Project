@@ -1,0 +1,156 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html, body {
+height: 100%;
+width: 100%;
+margin: 0;
+font-family:'Courier New', Courier, monospace
+
+}
+.header-container{
+    box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+main{
+    padding: 10px;
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    margin-inline: auto;
+    padding: 1rem;
+    max-width: 1000px;
+    /* padding-inline: 24px; */
+    align-items: center;
+    /* background-color: pink; */
+    
+}
+.search_filter-container{
+    height: 62px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    /* background-color: lightpink; */
+}
+.search_filter-container input{
+    border: none;
+    outline: none;
+    /* padding-block: 16px; */
+    height: 10px;
+    width: 400px;
+    font-size: larger;
+    padding: 30px;      
+    /* color: black;
+    background-color: green; */
+}
+
+.filter-by-region{
+    width: 250px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.countries-container{
+    max-width: 100%;
+     margin-inline: auto; 
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.countries-container input{
+    color: aqua;
+}
+.country_card{
+    display: inline-block;
+    width: 290px;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.2);
+    padding-bottom: 16px;
+    transition: transform 0.2s;
+}
+a{
+    text-decoration-line: none;
+}
+.country_card img{
+    width: 100%;
+}
+.cardtext{
+    padding-inline: 24px;
+}
+.cardtitle{
+    font-size: 24px;
+    margin-block: 8px;
+}
+.country_card:hover{
+    transform: scale(1.2);
+}
+@media (max-width:1000px) {
+    .countries-container{
+        justify-content: center;
+    }
+    .search_filter-container{
+        flex-direction: row;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* Default Light Mode */
+body {
+    background-color: white;
+    color: black;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+/* Header Dark Mode */
+.dark-mode .header-container {
+    background-color: #333;
+}
+
+/* Search & Filter Dark Mode */
+.dark-mode .search_filter-container {
+    background-color: #2b2b2b;
+}
+
+/* Country Card Dark Mode */
+.dark-mode .country_card {
+    background-color: #333;
+    color: white;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+/* Dark Mode Button */
+.darkModeToggle {
+    background: none;
+    border: none;
+    color: inherit;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px;
+    transition: all 0.3s;
+}
+
+/* Hover Effect */
+.darkModeToggle:hover {
+    opacity: 0.8;
+}
+
