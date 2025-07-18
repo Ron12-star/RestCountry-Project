@@ -12,5 +12,14 @@
   "license": "ISC",
   "dependencies": {
     "express": "^5.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ron12-star/RestCountry-Project.git"
+  },
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Ron12-star/RestCountry-Project/issues"
+  },
+  "homepage": "https://github.com/Ron12-star/RestCountry-Project#readme"
 }
