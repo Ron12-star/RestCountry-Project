@@ -1,12 +1,8 @@
-
-### ✅ `README.md`
-
-```markdown
 # 🌍 RestCountry Project
 
 A simple web project that displays country details using HTML, CSS, and JavaScript. The backend is built with Node.js and Express to serve the static files.
 
----
+
 
 ## 🚀 Features
 
@@ -16,7 +12,6 @@ A simple web project that displays country details using HTML, CSS, and JavaScri
 - JSON file (`data.json`) included to simulate or store data.
 - Simple and clean UI for learning and demonstration purposes.
 
----
 
 ## 🧑‍💻 Tech Stack
 
@@ -33,11 +28,10 @@ A simple web project that displays country details using HTML, CSS, and JavaScri
 - REST Countries API
 - JSON for data handling
 
----
 
 ## 📁 Project Structure
 
-``
+```
 
 RestCountry-Project/
 │
@@ -103,4 +97,5 @@ http://localhost:3000
 * Make sure you have Node.js installed.
 * You can rename `server-Ronal.js` to `server.js` for convenience.
 * Modify or extend the project to add search, filter, or other features.
+
 
